@@ -8,8 +8,8 @@ router = APIRouter()
 async def upload_advertising_platforms(file: UploadFile):
     """
     Метод загрузки рекламных площадок из файла
-    Параметры:
-        file - CSV-файл с данными рекламных площадок,
+    \n\n Параметры:
+        \n\n file - CSV-файл с данными рекламных площадок,
     """
     try:
         contents = await file.read()
@@ -27,10 +27,10 @@ async def search_advertising_platforms_endpoint(
 ):
     """
     Метод поиска списка рекламных площадок для заданной локации
-    Параметры:
-        latitude - Широта центра поиска,
-        longitude - Долгота центра поиска,
-        radius - Радиус поиска в километрах.
-        location - Локация поиска.
+    \n\n Параметры:
+        \n\n latitude - Широта центра поиска,
+        \n\n longitude - Долгота центра поиска,
+        \n\n radius - Радиус поиска в километрах.
+        \n\n location - Локация поиска.
     """
     return await search_advertising_platforms(latitude, longitude, radius, location)
