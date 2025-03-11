@@ -31,5 +31,6 @@ async def search_advertising_platforms_endpoint(
         latitude - Широта центра поиска,
         longitude - Долгота центра поиска,
         radius - Радиус поиска в километрах.
+        location - Локация поиска.
     """
     return await search_advertising_platforms(latitude, longitude, radius, location)
