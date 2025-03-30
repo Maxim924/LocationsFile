@@ -2,16 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>companies</title>
+    <title>wallet</title>
     <link rel="icon" href="../static/favicon.png">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: xxx-large;
+            color: #00d2f1;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #00d2f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #009aa2;
+        }
+    </style>
 </head>
 <body>
     <div class="centered">
-        <h1 style="font-size: xxx-large; color: #00d2f1">Platform Location</h1>
+        <h1>Wallet Platform</h1>
         <button onclick="location.href='/docs'">docs</button>
     </div>
 </body>
